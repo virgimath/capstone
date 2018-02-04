@@ -27,8 +27,8 @@ a {
   border: 1px solid orange;
 }
 
-.section.white-smoke {
-  background-color: WhiteSmoke;
+.white-smoke {
+  background-color: rgb(178, 186, 187);
 }
 
 /* top nav*/
@@ -92,8 +92,14 @@ nav span {
   padding: 0.5rem 6rem;
   text-align: center;
   margin-top: 3rem;
+  border: 1px solid black;
 }
 
+@media screen and (max-width= 990px) {
+  .learn {
+    display: block;
+  }
+}
 
 /* second section */
 
@@ -103,7 +109,7 @@ nav span {
   align-items: flex-start;
 }
 
-.study {
+.study, .video-section {
   max-width: 60%;
   display: flex;
   flex-direction: column;
@@ -125,14 +131,14 @@ nav span {
   max-width: 90%;
 }
 
-.participate {
+.participate, .exhibit {
   max-width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.info-container {
+.info-container, .exhibit-container {
   max-width: 100%;
   padding: 2rem 0 2rem 1rem;
   border: 1px solid gray;
@@ -148,9 +154,6 @@ nav span {
   color: blue;
 }
 
-.info-container.guest {
-  background-color: WhiteSmoke;
-}
 
 .info-text {
   padding-left: 1rem;
@@ -200,6 +203,44 @@ nav span {
 
 /* fourth section */
 
+.section.thesis {
+  display: block;
+}
+
+.thesis-title {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.thesis-container {
+  display: flex;
+  max-width: 100%;
+  padding: 0 0 2rem 1.5rem;
+  align-items: flex-start;
+}
+
+.video-section {
+  display: block;
+  max-width: 60%;
+}
+
+video {
+  max-width: 100%;
+}
+
+.video-section h1 {
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.exhibit-section {
+  display: block;
+  max-width: 40%;
+}
+
+.exhibit-container {
+  display: flex;
+}
+
 /* footer */
 
 .bottom-nav {
@@ -213,4 +254,10 @@ nav span {
 
 .terms span {
   padding-left: 1rem;
+}
+
+@media screen and (min-width= 991px) {
+  .mobile {
+    display: none;
+  }
 }
